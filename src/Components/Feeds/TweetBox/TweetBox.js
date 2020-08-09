@@ -9,7 +9,9 @@ const TweetBox = () => {
 
     const sendTweet = e => {
         e.preventDefault();
-
+        if (!tweetMsg || tweetMsg == "") {
+            return
+        }
         db.collection("posts").add({
             avatar: "https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png",
             displayName: "Parth Shrivastava",
@@ -21,6 +23,8 @@ const TweetBox = () => {
         })
         setTweetMsg("")
         setTweetImg("")
+
+
     }
 
     return (
