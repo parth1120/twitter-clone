@@ -21,11 +21,14 @@
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 20px;
+  
 }
 
 .widgets__input > input {
   border: none;
   background-color: var(--twitter-background);
+  border: none;
+    outline: none;
 }
 
 .widgets__searchIcon {
